@@ -3,7 +3,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface RELAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 
 @end
