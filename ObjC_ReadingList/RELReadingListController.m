@@ -18,4 +18,11 @@
     controller.book = [self.dataSource bookAtIndexPath:self.tableView.indexPathForSelectedRow];
 }
 
+- (IBAction)doneEditingBook:(UIStoryboardSegue *)segue {
+    // TODO: sync UI and save
+}
+- (IBAction)cancelEditingBook:(UIStoryboardSegue *)segue {
+    // Does nothing
+}
+
 @end
