@@ -3,22 +3,19 @@
 
 #import "RELReadingListController.h"
 #import "RELReadingListDataSource.h"
+#import <ReadingListModel/ReadingListModel.h>
+#import "RELViewBookController.h"
 
 @interface RELReadingListController ()
-@property () RELReadingListDataSource *dataSource;
+@property (strong, nonatomic) IBOutlet RELReadingListDataSource *dataSource;
 @end
 
 @implementation RELReadingListController
 
-@end
-
-@implementation RELReadingListController (TableViewDelegate)
-
-- (void)tableView:(UITableView *)tableView
-  willDisplayCell:(UITableViewCell *)cell
-forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    
+    RELViewBookController *controller = segue.destinationViewController;
+    controller.book = [self.dataSource bookAtIndexPath:self.tableView.indexPathForSelectedRow];
 }
 
 @end

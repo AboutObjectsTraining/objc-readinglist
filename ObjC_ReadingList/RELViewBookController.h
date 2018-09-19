@@ -1,12 +1,12 @@
 // Copyright (C) 2018 About Objects, Inc. All Rights Reserved.
 // See LICENSE.txt for this project's licensing information.
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @class RLMBook;
 
-@interface RELReadingListDataSource : NSObject
+@interface RELViewBookController : UITableViewController
 
-- (RLMBook *)bookAtIndexPath:(NSIndexPath *)indexPath;
+@property (strong, nonatomic) RLMBook *book;
 
 @end

@@ -21,6 +21,13 @@
     return _readingList;
 }
 
+- (RLMBook *)bookAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self.readingList bookAtIndexPath:indexPath];
+}
+
+// MARK: - UITableViewDataSource methods
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.readingList.books.count;
