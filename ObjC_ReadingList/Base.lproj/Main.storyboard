@@ -226,7 +226,7 @@
                     <navigationItem key="navigationItem" title="View Book" id="v1s-UW-grU">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Ofu-Qv-zex">
                             <connections>
-                                <segue destination="l5t-KT-On8" kind="show" id="QgX-DT-tft"/>
+                                <segue destination="l5t-KT-On8" kind="presentation" id="QgX-DT-tft"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -270,7 +270,7 @@
                 <viewControllerPlaceholder storyboardName="EditBook" id="l5t-KT-On8" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ikq-Ef-0iu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1296.8" y="-183.25123152709361"/>
+            <point key="canvasLocation" x="1201" y="-183"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

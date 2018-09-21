@@ -31,4 +31,8 @@
     controller.book = self.book;
 }
 
+- (IBAction)cancelEditingBook:(UIStoryboardSegue *)segue {
+    // Does nothing
+}
+
 @end
