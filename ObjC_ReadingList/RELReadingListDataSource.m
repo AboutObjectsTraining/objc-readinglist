@@ -26,6 +26,11 @@
     return [self.readingList bookAtIndexPath:indexPath];
 }
 
+- (void)save
+{
+    [self.store saveReadingList:self.readingList];
+}
+
 // MARK: - UITableViewDataSource methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

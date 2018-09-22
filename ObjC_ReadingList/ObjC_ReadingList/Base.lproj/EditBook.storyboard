@@ -140,6 +140,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstNameField" destination="e3Y-dn-3B6" id="hxa-6Y-bvb"/>
+                        <outlet property="lastNameField" destination="9j6-2a-KzK" id="a6M-dZ-JvQ"/>
+                        <outlet property="titleField" destination="KUc-LY-CMp" id="JZ7-Ip-TyJ"/>
+                        <outlet property="yearField" destination="MDM-8x-jPg" id="ofN-jj-Wev"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1a-YQ-8cl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="sk9-gd-7Te" userLabel="Exit" sceneMemberID="exit"/>

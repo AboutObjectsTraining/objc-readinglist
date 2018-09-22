@@ -8,5 +8,6 @@
 @interface RELReadingListDataSource : NSObject
 
 - (RLMBook *)bookAtIndexPath:(NSIndexPath *)indexPath;
+- (void)save;
 
 @end

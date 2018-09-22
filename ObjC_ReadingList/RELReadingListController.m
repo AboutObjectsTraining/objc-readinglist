@@ -19,7 +19,8 @@
 }
 
 - (IBAction)doneEditingBook:(UIStoryboardSegue *)segue {
-    // TODO: sync UI and save
+    [self.tableView reloadData];
+    [self.dataSource save];
 }
 
 @end
