@@ -3,6 +3,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RELReadingListController : UITableViewController
+@interface UIStoryboardSegue (RELAdditions)
+
+@property (readonly, nonatomic) UIViewController *rel_destinationViewController;
 
 @end

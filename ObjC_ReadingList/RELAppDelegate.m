@@ -3,6 +3,7 @@
 
 #import "RELAppDelegate.h"
 #import "RELEditBookController.h"
+#import "RELAddBookController.h"
 
 @implementation RELAppDelegate
 
@@ -16,7 +17,7 @@
     UINavigationBar.appearance.largeTitleTextAttributes = self.titleAttributes;
     
     [UITableViewCell appearanceWhenContainedInInstancesOfClasses:
-     @[[RELEditBookController class]]].backgroundColor = [UIColor colorNamed:@"Cell Color"];
+     @[[RELEditBookController class], [RELAddBookController class]]].backgroundColor = [UIColor colorNamed:@"Cell Color"];
 }
 
 @end

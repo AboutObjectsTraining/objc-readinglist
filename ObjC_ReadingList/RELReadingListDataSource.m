@@ -21,13 +21,16 @@
     return _readingList;
 }
 
-- (RLMBook *)bookAtIndexPath:(NSIndexPath *)indexPath
-{
+- (RLMBook *)bookAtIndexPath:(NSIndexPath *)indexPath {
     return [self.readingList bookAtIndexPath:indexPath];
 }
 
-- (void)save
-{
+- (void)addBook:(RLMBook *)book {
+    [self.readingList insertBook:book
+                     atIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+}
+
+- (void)save {
     [self.store saveReadingList:self.readingList];
 }
 
