@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B41A759F214D825A0013A6A5 /* RELViewBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A759E214D825A0013A6A5 /* RELViewBookController.m */; };
+		B429019A215D51830070B5F8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4290199215D51830070B5F8 /* Colors.xcassets */; };
 		B471B3E32146D7C3000C8EE8 /* RELAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B3E22146D7C3000C8EE8 /* RELAppDelegate.m */; };
 		B471B3E92146D7C3000C8EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B471B3E72146D7C3000C8EE8 /* Main.storyboard */; };
 		B471B3EB2146D7C4000C8EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B471B3EA2146D7C4000C8EE8 /* Assets.xcassets */; };
@@ -73,6 +74,7 @@
 /* Begin PBXFileReference section */
 		B41A759D214D825A0013A6A5 /* RELViewBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELViewBookController.h; sourceTree = "<group>"; };
 		B41A759E214D825A0013A6A5 /* RELViewBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELViewBookController.m; sourceTree = "<group>"; };
+		B4290199215D51830070B5F8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		B471B3DE2146D7C3000C8EE8 /* ObjC_ReadingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjC_ReadingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B471B3E12146D7C3000C8EE8 /* RELAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAppDelegate.h; sourceTree = "<group>"; };
 		B471B3E22146D7C3000C8EE8 /* RELAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAppDelegate.m; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				B4D2FC312152F95000A28B02 /* EditBook.storyboard */,
 				B471B3E72146D7C3000C8EE8 /* Main.storyboard */,
 				B471B3EA2146D7C4000C8EE8 /* Assets.xcassets */,
+				B4290199215D51830070B5F8 /* Colors.xcassets */,
 				B471B3EC2146D7C4000C8EE8 /* LaunchScreen.storyboard */,
 				B471B3EF2146D7C4000C8EE8 /* Info.plist */,
 				B471B3F02146D7C4000C8EE8 /* main.m */,
@@ -343,6 +346,7 @@
 				B471B3EE2146D7C4000C8EE8 /* LaunchScreen.storyboard in Resources */,
 				B471B3EB2146D7C4000C8EE8 /* Assets.xcassets in Resources */,
 				B471B3E92146D7C3000C8EE8 /* Main.storyboard in Resources */,
+				B429019A215D51830070B5F8 /* Colors.xcassets in Resources */,
 				B4D2FC3C215919A400A28B02 /* AddBook.storyboard in Resources */,
 				B4D2FC332152F95000A28B02 /* EditBook.storyboard in Resources */,
 			);
