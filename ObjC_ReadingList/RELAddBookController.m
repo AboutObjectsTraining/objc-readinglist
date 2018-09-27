@@ -34,7 +34,7 @@
 }
 
 - (RLMBook *)book {
-    return [[RLMBook alloc] initWithDictionary:self.bookDictionary];
+    return [RLMBook modelObjectWithDictionary:self.bookDictionary];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
