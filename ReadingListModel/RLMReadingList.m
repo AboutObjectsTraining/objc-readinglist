@@ -70,13 +70,13 @@ const struct RLMReadingListKeys RLMReadingListKeys = {
     [self.mutableBooks insertObject:book atIndex:indexPath.row];
 }
 
-- (void)removeBook:(RLMBook *)book atIndexPath:(NSIndexPath *)indexPath {
+- (void)removeBookAtIndexPath:(NSIndexPath *)indexPath {
     [self.mutableBooks removeObjectAtIndex:indexPath.row];
 }
 
 - (void)moveBookAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
     RLMBook *book = self.books[indexPath.row];
-    [self removeBook:book atIndexPath:indexPath];
+    [self removeBookAtIndexPath:indexPath];
     [self insertBook:book atIndexPath:destinationIndexPath];
 }
 

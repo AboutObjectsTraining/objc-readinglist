@@ -53,4 +53,19 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+{
+    [self.readingList moveBookAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
+    [self save];
+    
+    [tableView reloadData];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.readingList removeBookAtIndexPath:indexPath];
+    [self save];
+    
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
 @end

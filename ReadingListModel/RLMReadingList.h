@@ -21,7 +21,7 @@ extern const struct RLMReadingListKeys {
 
 - (RLMBook *)bookAtIndexPath:(NSIndexPath *)indexPath;
 - (void)insertBook:(RLMBook *)book atIndexPath:(NSIndexPath *)indexPath;
-- (void)removeBook:(RLMBook *)book atIndexPath:(NSIndexPath *)indexPath;
+- (void)removeBookAtIndexPath:(NSIndexPath *)indexPath;
 - (void)moveBookAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
 
 @end

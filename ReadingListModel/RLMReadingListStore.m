@@ -20,7 +20,10 @@ NSString * const defaultStoreName = @"ReadingList";
 - (NSString *)bundlePath { return [[NSBundle bundleForClass:self.class] pathForResource:self.storeName ofType:self.storeType]; }
 - (NSString *)storePath {
     NSString *path = RELPathForDocument(self.storeName, self.storeType);
-    return [NSFileManager.defaultManager fileExistsAtPath:path] ? path : self.bundlePath;
+    if (![NSFileManager.defaultManager fileExistsAtPath:path]) {
+        [NSFileManager.defaultManager copyItemAtPath:self.bundlePath toPath:path error:nil];
+    }
+    return path;
 }
 
 - (RLMReadingList *)fetchedReadingList
