@@ -27,7 +27,7 @@
     }
     else {
         RELAddBookController *controller = (RELAddBookController *) segue.rel_destinationViewController;
-        id __weak weakSelf = self;
+        typeof(self) __weak weakSelf = self;
         controller.completion = ^(RLMBook *book) { [weakSelf addBook:book]; };
     }
 }
@@ -35,10 +35,8 @@
 - (void)addBook:(RLMBook *)book {
     [self.dataSource addBook:book];
     [self.dataSource save];
-    
     [self.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]]
                           withRowAnimation:UITableViewRowAnimationAutomatic];
-//    [self.tableView reloadData];
 }
 
 // MARK: - Unwind segues
