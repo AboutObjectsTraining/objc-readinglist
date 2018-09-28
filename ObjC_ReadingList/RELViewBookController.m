@@ -10,6 +10,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *yearLabel;
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
 
 @implementation RELViewBookController
@@ -21,6 +22,7 @@
     self.yearLabel.text = self.book.year;
     self.firstNameLabel.text = self.book.author.firstName;
     self.lastNameLabel.text = self.book.author.lastName;
+    self.imageView.image = [UIImage imageNamed:self.book.author.lastName];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

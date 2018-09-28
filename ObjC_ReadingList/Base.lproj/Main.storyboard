@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -221,6 +222,34 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="168" id="9is-cu-D4L">
+                                        <rect key="frame" x="0.0" y="335.33333333333337" width="375" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9is-cu-D4L" id="SUW-9B-hBd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="167.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mth-Aj-qpE">
+                                                    <rect key="frame" x="123.66666666666669" y="20" width="128" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="mth-Aj-qpE" secondAttribute="height" multiplier="1:1" id="Xmp-cU-XZW"/>
+                                                        <constraint firstAttribute="height" constant="128" id="zvB-Kd-lqC"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mth-Aj-qpE" firstAttribute="centerX" secondItem="SUW-9B-hBd" secondAttribute="centerX" id="6uT-da-tze"/>
+                                                <constraint firstItem="mth-Aj-qpE" firstAttribute="top" secondItem="SUW-9B-hBd" secondAttribute="topMargin" constant="9" id="cIg-8L-AMl"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mth-Aj-qpE" secondAttribute="bottom" constant="9" id="vvz-eM-JZK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Cell Color"/>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -238,6 +267,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="firstNameLabel" destination="BJu-gg-M6e" id="aUh-go-a7e"/>
+                        <outlet property="imageView" destination="mth-Aj-qpE" id="ey5-Le-4Dq"/>
                         <outlet property="lastNameLabel" destination="gJW-Qj-xDn" id="u8i-ru-Hqw"/>
                         <outlet property="titleLabel" destination="sQv-5B-E2D" id="sGV-DW-9iL"/>
                         <outlet property="yearLabel" destination="Qlm-dp-N5a" id="VFb-KH-A23"/>
@@ -245,7 +275,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B17-U1-qxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="617" y="-183"/>
+            <point key="canvasLocation" x="616.79999999999995" y="-183.25123152709361"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qm2-BO-bd0">
@@ -287,6 +317,11 @@
             <point key="canvasLocation" x="385" y="-606"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Cell Color">
+            <color red="0.9649999737739563" green="0.96299999952316284" blue="0.92299997806549072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XEU-k6-DFi"/>
     </inferredMetricsTieBreakers>

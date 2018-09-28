@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B41A759F214D825A0013A6A5 /* RELViewBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A759E214D825A0013A6A5 /* RELViewBookController.m */; };
 		B429019A215D51830070B5F8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4290199215D51830070B5F8 /* Colors.xcassets */; };
+		B429019D215E4EEC0070B5F8 /* UIView+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B429019C215E4EEC0070B5F8 /* UIView+RELAdditions.m */; };
 		B471B3E32146D7C3000C8EE8 /* RELAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B3E22146D7C3000C8EE8 /* RELAppDelegate.m */; };
 		B471B3E92146D7C3000C8EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B471B3E72146D7C3000C8EE8 /* Main.storyboard */; };
 		B471B3EB2146D7C4000C8EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B471B3EA2146D7C4000C8EE8 /* Assets.xcassets */; };
@@ -75,6 +76,8 @@
 		B41A759D214D825A0013A6A5 /* RELViewBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELViewBookController.h; sourceTree = "<group>"; };
 		B41A759E214D825A0013A6A5 /* RELViewBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELViewBookController.m; sourceTree = "<group>"; };
 		B4290199215D51830070B5F8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		B429019B215E4EEC0070B5F8 /* UIView+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RELAdditions.h"; sourceTree = "<group>"; };
+		B429019C215E4EEC0070B5F8 /* UIView+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RELAdditions.m"; sourceTree = "<group>"; };
 		B471B3DE2146D7C3000C8EE8 /* ObjC_ReadingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjC_ReadingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B471B3E12146D7C3000C8EE8 /* RELAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAppDelegate.h; sourceTree = "<group>"; };
 		B471B3E22146D7C3000C8EE8 /* RELAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAppDelegate.m; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				B4D2FC352159047E00A28B02 /* RELAddBookController.m */,
 				B4D2FC372159097900A28B02 /* UIStoryboardSegue+RELAdditions.h */,
 				B4D2FC382159097900A28B02 /* UIStoryboardSegue+RELAdditions.m */,
+				B429019B215E4EEC0070B5F8 /* UIView+RELAdditions.h */,
+				B429019C215E4EEC0070B5F8 /* UIView+RELAdditions.m */,
 				B4D2FC3A215919A400A28B02 /* AddBook.storyboard */,
 				B4D2FC312152F95000A28B02 /* EditBook.storyboard */,
 				B471B3E72146D7C3000C8EE8 /* Main.storyboard */,
@@ -376,6 +381,7 @@
 			files = (
 				B4D2FC392159097900A28B02 /* UIStoryboardSegue+RELAdditions.m in Sources */,
 				B41A759F214D825A0013A6A5 /* RELViewBookController.m in Sources */,
+				B429019D215E4EEC0070B5F8 /* UIView+RELAdditions.m in Sources */,
 				B471B3F12146D7C4000C8EE8 /* main.m in Sources */,
 				B4D2FC302152EE4500A28B02 /* RELEditBookController.m in Sources */,
 				B471B3E32146D7C3000C8EE8 /* RELAppDelegate.m in Sources */,
