@@ -13,6 +13,8 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
+    self.window.tintColor = [UIColor colorNamed:@"Tint Color"];
+    
     UINavigationBar.appearance.titleTextAttributes = self.titleAttributes;
     UINavigationBar.appearance.largeTitleTextAttributes = self.titleAttributes;
     
