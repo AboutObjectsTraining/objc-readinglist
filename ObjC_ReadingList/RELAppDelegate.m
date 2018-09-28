@@ -16,6 +16,7 @@
     UINavigationBar.appearance.titleTextAttributes = self.titleAttributes;
     UINavigationBar.appearance.largeTitleTextAttributes = self.titleAttributes;
     
+    UITableView.appearance.backgroundColor = [UIColor colorNamed:@"Alternate Cell Color"];
     [UITableViewCell appearanceWhenContainedInInstancesOfClasses:
      @[[RELEditBookController class], [RELAddBookController class]]].backgroundColor = [UIColor colorNamed:@"Cell Color"];
 }

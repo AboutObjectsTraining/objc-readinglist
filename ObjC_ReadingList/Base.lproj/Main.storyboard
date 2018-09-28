@@ -245,7 +245,6 @@
                                             <constraints>
                                                 <constraint firstItem="mth-Aj-qpE" firstAttribute="centerX" secondItem="SUW-9B-hBd" secondAttribute="centerX" id="6uT-da-tze"/>
                                                 <constraint firstItem="mth-Aj-qpE" firstAttribute="top" secondItem="SUW-9B-hBd" secondAttribute="topMargin" constant="9" id="cIg-8L-AMl"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="mth-Aj-qpE" secondAttribute="bottom" constant="9" id="vvz-eM-JZK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Cell Color"/>
