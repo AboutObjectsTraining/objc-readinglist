@@ -32,7 +32,7 @@
 		B471B4252149C643000C8EE8 /* RLMReadingListStore.h in Headers */ = {isa = PBXBuildFile; fileRef = B471B4232149C643000C8EE8 /* RLMReadingListStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B471B4262149C643000C8EE8 /* RLMReadingListStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B4242149C643000C8EE8 /* RLMReadingListStore.m */; };
 		B471B429214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = B471B427214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.h */; };
-		B471B42A214A9B4B000C8EE8 /* NSArray+ RLMObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B428214A9B4B000C8EE8 /* NSArray+ RLMObjectMapping.m */; };
+		B471B42A214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B428214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.m */; };
 		B471B432214AA095000C8EE8 /* StoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B431214AA095000C8EE8 /* StoreTests.m */; };
 		B4D2FC302152EE4500A28B02 /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D2FC2F2152EE4500A28B02 /* RELEditBookController.m */; };
 		B4D2FC332152F95000A28B02 /* EditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D2FC312152F95000A28B02 /* EditBook.storyboard */; };
@@ -105,7 +105,7 @@
 		B471B4232149C643000C8EE8 /* RLMReadingListStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMReadingListStore.h; sourceTree = "<group>"; };
 		B471B4242149C643000C8EE8 /* RLMReadingListStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLMReadingListStore.m; sourceTree = "<group>"; };
 		B471B427214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+RLMObjectMapping.h"; sourceTree = "<group>"; };
-		B471B428214A9B4B000C8EE8 /* NSArray+ RLMObjectMapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ RLMObjectMapping.m"; sourceTree = "<group>"; };
+		B471B428214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RLMObjectMapping.m"; sourceTree = "<group>"; };
 		B471B42F214AA095000C8EE8 /* ModelUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B471B431214AA095000C8EE8 /* StoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreTests.m; sourceTree = "<group>"; };
 		B471B433214AA095000C8EE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -211,7 +211,7 @@
 				B471B41F2149BF45000C8EE8 /* RLMReadingList.h */,
 				B471B4202149BF45000C8EE8 /* RLMReadingList.m */,
 				B471B427214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.h */,
-				B471B428214A9B4B000C8EE8 /* NSArray+ RLMObjectMapping.m */,
+				B471B428214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.m */,
 				B471B4152149A3B6000C8EE8 /* ReadingList.plist */,
 				B471B40521494FB4000C8EE8 /* Info.plist */,
 			);
@@ -395,7 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B471B42A214A9B4B000C8EE8 /* NSArray+ RLMObjectMapping.m in Sources */,
+				B471B42A214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.m in Sources */,
 				B471B4192149A5CC000C8EE8 /* RLMAuthor.m in Sources */,
 				B471B41E2149BC0B000C8EE8 /* RLMBook.m in Sources */,
 				B471B4262149C643000C8EE8 /* RLMReadingListStore.m in Sources */,
