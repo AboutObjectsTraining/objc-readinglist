@@ -1,7 +1,7 @@
 // Copyright (C) 2018 About Objects, Inc. All Rights Reserved.
 // See LICENSE.txt for this project's licensing information.
 
-#import "RLMReadingListStore.h"
+#import "RLMStoreController.h"
 #import "RLMReadingList.h"
 
 NSString *RELPathForDocument(NSString *name, NSString *type)
@@ -13,7 +13,7 @@ NSString *RELPathForDocument(NSString *name, NSString *type)
 
 NSString * const defaultStoreName = @"ReadingList";
 
-@implementation RLMReadingListStore
+@implementation RLMStoreController
 
 - (NSString *)storeType { return @"plist"; }
 - (NSString *)storeName { return defaultStoreName; }

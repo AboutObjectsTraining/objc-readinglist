@@ -100,10 +100,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDE-HJ-arQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="0E1-7e-iho" customClass="RELReadingListDataSource">
                     <connections>
-                        <outlet property="store" destination="Lez-5u-qm6" id="0NO-6g-8t9"/>
+                        <outlet property="storeController" destination="Lez-5u-qm6" id="0NO-6g-8t9"/>
                     </connections>
                 </customObject>
-                <customObject id="Lez-5u-qm6" customClass="RLMReadingListStore"/>
+                <customObject id="Lez-5u-qm6" customClass="RLMStoreController"/>
             </objects>
             <point key="canvasLocation" x="-230" y="-183"/>
         </scene>

@@ -12,4 +12,4 @@ FOUNDATION_EXPORT const unsigned char ReadingListModelVersionString[];
 #import <ReadingListModel/RLMAuthor.h>
 #import <ReadingListModel/RLMBook.h>
 #import <ReadingListModel/RLMReadingList.h>
-#import <ReadingListModel/RLMReadingListStore.h>
+#import <ReadingListModel/RLMStoreController.h>

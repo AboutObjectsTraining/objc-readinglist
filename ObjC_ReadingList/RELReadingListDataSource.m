@@ -7,7 +7,7 @@
 @import ReadingListModel;
 
 @interface RELReadingListDataSource () <UITableViewDataSource>
-@property (strong, nonatomic) IBOutlet RLMReadingListStore *store;
+@property (strong, nonatomic) IBOutlet RLMStoreController *storeController;
 @property (strong, nonatomic) RLMReadingList *readingList;
 @end
 
@@ -16,7 +16,7 @@
 
 - (RLMReadingList *)readingList {
     if (_readingList == nil) {
-        _readingList = self.store.fetchedReadingList;
+        _readingList = self.storeController.fetchedReadingList;
     }
     return _readingList;
 }
@@ -31,7 +31,7 @@
 }
 
 - (void)save {
-    [self.store saveReadingList:self.readingList];
+    [self.storeController saveReadingList:self.readingList];
 }
 
 // MARK: - UITableViewDataSource methods

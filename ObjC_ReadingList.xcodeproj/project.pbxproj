@@ -29,8 +29,8 @@
 		B471B41E2149BC0B000C8EE8 /* RLMBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B41C2149BC0B000C8EE8 /* RLMBook.m */; };
 		B471B4212149BF45000C8EE8 /* RLMReadingList.h in Headers */ = {isa = PBXBuildFile; fileRef = B471B41F2149BF45000C8EE8 /* RLMReadingList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B471B4222149BF45000C8EE8 /* RLMReadingList.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B4202149BF45000C8EE8 /* RLMReadingList.m */; };
-		B471B4252149C643000C8EE8 /* RLMReadingListStore.h in Headers */ = {isa = PBXBuildFile; fileRef = B471B4232149C643000C8EE8 /* RLMReadingListStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B471B4262149C643000C8EE8 /* RLMReadingListStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B4242149C643000C8EE8 /* RLMReadingListStore.m */; };
+		B471B4252149C643000C8EE8 /* RLMStoreController.h in Headers */ = {isa = PBXBuildFile; fileRef = B471B4232149C643000C8EE8 /* RLMStoreController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B471B4262149C643000C8EE8 /* RLMStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B4242149C643000C8EE8 /* RLMStoreController.m */; };
 		B471B429214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = B471B427214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.h */; };
 		B471B42A214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B428214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.m */; };
 		B471B432214AA095000C8EE8 /* StoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B471B431214AA095000C8EE8 /* StoreTests.m */; };
@@ -102,8 +102,8 @@
 		B471B41C2149BC0B000C8EE8 /* RLMBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMBook.m; sourceTree = "<group>"; };
 		B471B41F2149BF45000C8EE8 /* RLMReadingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMReadingList.h; sourceTree = "<group>"; };
 		B471B4202149BF45000C8EE8 /* RLMReadingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMReadingList.m; sourceTree = "<group>"; };
-		B471B4232149C643000C8EE8 /* RLMReadingListStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMReadingListStore.h; sourceTree = "<group>"; };
-		B471B4242149C643000C8EE8 /* RLMReadingListStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLMReadingListStore.m; sourceTree = "<group>"; };
+		B471B4232149C643000C8EE8 /* RLMStoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMStoreController.h; sourceTree = "<group>"; };
+		B471B4242149C643000C8EE8 /* RLMStoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLMStoreController.m; sourceTree = "<group>"; };
 		B471B427214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+RLMObjectMapping.h"; sourceTree = "<group>"; };
 		B471B428214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RLMObjectMapping.m"; sourceTree = "<group>"; };
 		B471B42F214AA095000C8EE8 /* ModelUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,8 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				B471B40421494FB4000C8EE8 /* ReadingListModel.h */,
-				B471B4232149C643000C8EE8 /* RLMReadingListStore.h */,
-				B471B4242149C643000C8EE8 /* RLMReadingListStore.m */,
+				B471B4232149C643000C8EE8 /* RLMStoreController.h */,
+				B471B4242149C643000C8EE8 /* RLMStoreController.m */,
 				B471B40F21495041000C8EE8 /* RLMModelObject.h */,
 				B471B41021495041000C8EE8 /* RLMModelObject.m */,
 				B471B4182149A5CC000C8EE8 /* RLMAuthor.h */,
@@ -235,7 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B471B40621494FB4000C8EE8 /* ReadingListModel.h in Headers */,
-				B471B4252149C643000C8EE8 /* RLMReadingListStore.h in Headers */,
+				B471B4252149C643000C8EE8 /* RLMStoreController.h in Headers */,
 				B471B41A2149A5CC000C8EE8 /* RLMAuthor.h in Headers */,
 				B471B4212149BF45000C8EE8 /* RLMReadingList.h in Headers */,
 				B471B41121495041000C8EE8 /* RLMModelObject.h in Headers */,
@@ -398,7 +398,7 @@
 				B471B42A214A9B4B000C8EE8 /* NSArray+RLMObjectMapping.m in Sources */,
 				B471B4192149A5CC000C8EE8 /* RLMAuthor.m in Sources */,
 				B471B41E2149BC0B000C8EE8 /* RLMBook.m in Sources */,
-				B471B4262149C643000C8EE8 /* RLMReadingListStore.m in Sources */,
+				B471B4262149C643000C8EE8 /* RLMStoreController.m in Sources */,
 				B471B4222149BF45000C8EE8 /* RLMReadingList.m in Sources */,
 				B471B41221495041000C8EE8 /* RLMModelObject.m in Sources */,
 			);

@@ -16,7 +16,7 @@
 }
 
 - (void)testLoadReadingList {
-    RLMReadingListStore *store = [[RLMReadingListStore alloc] init];
+    RLMStoreController *store = [[RLMStoreController alloc] init];
     RLMReadingList *readingList = store.fetchedReadingList;
     NSLog(@"%@", readingList);
 }
