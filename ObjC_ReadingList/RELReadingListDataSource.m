@@ -46,11 +46,15 @@
     NSString *identifier = indexPath.row % 2 == 0 ? @"Even" : @"Odd";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
+    [self populateCell:cell atIndexPath:indexPath];
+    
+    return cell;
+}
+
+- (void)populateCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     RLMBook *book = [self.readingList bookAtIndexPath:indexPath];
     cell.textLabel.text = book.title;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ | %@", book.year, book.author.fullName];
-    
-    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
