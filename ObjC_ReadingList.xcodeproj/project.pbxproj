@@ -39,6 +39,7 @@
 		B4D2FC362159047E00A28B02 /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D2FC352159047E00A28B02 /* RELAddBookController.m */; };
 		B4D2FC392159097900A28B02 /* UIStoryboardSegue+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D2FC382159097900A28B02 /* UIStoryboardSegue+RELAdditions.m */; };
 		B4D2FC3C215919A400A28B02 /* AddBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D2FC3A215919A400A28B02 /* AddBook.storyboard */; };
+		B4E75409222B162900A2EFA4 /* UIColor+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E75408222B162900A2EFA4 /* UIColor+RELAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,8 @@
 		B4D2FC372159097900A28B02 /* UIStoryboardSegue+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+RELAdditions.h"; sourceTree = "<group>"; };
 		B4D2FC382159097900A28B02 /* UIStoryboardSegue+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+RELAdditions.m"; sourceTree = "<group>"; };
 		B4D2FC3B215919A400A28B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ObjC_ReadingList/Base.lproj/AddBook.storyboard; sourceTree = "<group>"; };
+		B4E75407222B162900A2EFA4 /* UIColor+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+RELAdditions.h"; sourceTree = "<group>"; };
+		B4E75408222B162900A2EFA4 /* UIColor+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RELAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 				B4D2FC352159047E00A28B02 /* RELAddBookController.m */,
 				B4D2FC372159097900A28B02 /* UIStoryboardSegue+RELAdditions.h */,
 				B4D2FC382159097900A28B02 /* UIStoryboardSegue+RELAdditions.m */,
+				B4E75407222B162900A2EFA4 /* UIColor+RELAdditions.h */,
+				B4E75408222B162900A2EFA4 /* UIColor+RELAdditions.m */,
 				B429019B215E4EEC0070B5F8 /* UIView+RELAdditions.h */,
 				B429019C215E4EEC0070B5F8 /* UIView+RELAdditions.m */,
 				B4D2FC3A215919A400A28B02 /* AddBook.storyboard */,
@@ -386,6 +391,7 @@
 				B4D2FC302152EE4500A28B02 /* RELEditBookController.m in Sources */,
 				B471B3E32146D7C3000C8EE8 /* RELAppDelegate.m in Sources */,
 				B471B3F92146D8F3000C8EE8 /* RELReadingListController.m in Sources */,
+				B4E75409222B162900A2EFA4 /* UIColor+RELAdditions.m in Sources */,
 				B471B3FC2146D92F000C8EE8 /* RELReadingListDataSource.m in Sources */,
 				B4D2FC362159047E00A28B02 /* RELAddBookController.m in Sources */,
 			);
