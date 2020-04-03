@@ -33,7 +33,7 @@
     controller.book = self.book;
 }
 
-- (IBAction)cancelEditingBook:(UIStoryboardSegue *)segue {
+- (IBAction)cancel:(UIStoryboardSegue *)segue {
     // Does nothing
 }
 

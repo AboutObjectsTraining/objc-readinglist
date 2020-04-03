@@ -28,27 +28,17 @@
     else {
         RELAddBookController *controller = (RELAddBookController *) segue.rel_destinationViewController;
         typeof(self) __weak weakSelf = self;
-        controller.completion = ^(RLMBook *book) { [weakSelf addBook:book]; };
+        controller.completion = ^(RLMBook *book) { [weakSelf.dataSource addBook:book]; };
     }
 }
 
-- (void)addBook:(RLMBook *)book {
-    [self.dataSource addBook:book];
+// MARK: - Unwind segues
+- (IBAction)done:(UIStoryboardSegue *)segue {
+    [self.tableView reloadData];
     [self.dataSource save];
-    [self.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]]
-                          withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
-// MARK: - Unwind segues
-- (IBAction)doneEditingBook:(UIStoryboardSegue *)segue {
-    [self.tableView reloadData];
-    [self.dataSource save];
-}
-- (IBAction)doneAddingBook:(UIStoryboardSegue *)segue {
-    [self.tableView reloadData];
-    [self.dataSource save];
-}
-- (IBAction)cancelAddingBook:(UIStoryboardSegue *)segue {
+- (IBAction)cancel:(UIStoryboardSegue *)segue {
     // Does nothing
 }
 
