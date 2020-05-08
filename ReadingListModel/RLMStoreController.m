@@ -4,20 +4,20 @@
 #import "RLMStoreController.h"
 #import "RLMReadingList.h"
 
-NSString *RELPathForDocument(NSString *name, NSString *type)
-{
+NSString *RELPathForDocument(NSString *name, NSString *type) {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     return [[paths.lastObject stringByAppendingPathComponent:name] stringByAppendingPathExtension:type];
 }
 
-
-NSString * const defaultStoreName = @"ReadingList";
+NSString * const RELDefaultStoreName = @"ReadingList";
 
 @implementation RLMStoreController
 
-- (NSString *)storeType { return @"plist"; }
-- (NSString *)storeName { return defaultStoreName; }
-- (NSString *)bundlePath { return [[NSBundle bundleForClass:self.class] pathForResource:self.storeName ofType:self.storeType]; }
+- (NSString *)storeType  { return @"plist"; }
+- (NSString *)storeName  { return RELDefaultStoreName; }
+- (NSBundle *)bundle     { return [NSBundle bundleForClass:self.class]; }
+- (NSString *)bundlePath { return [self.bundle pathForResource:self.storeName ofType:self.storeType]; }
+
 - (NSString *)storePath {
     NSString *path = RELPathForDocument(self.storeName, self.storeType);
     if (![NSFileManager.defaultManager fileExistsAtPath:path]) {
@@ -26,14 +26,12 @@ NSString * const defaultStoreName = @"ReadingList";
     return path;
 }
 
-- (RLMReadingList *)fetchedReadingList
-{
+- (RLMReadingList *)fetchedReadingList {
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:self.storePath];
     return [RLMReadingList modelObjectWithDictionary:dict];
 }
 
-- (void)saveReadingList:(RLMReadingList *)readingList
-{
+- (void)saveReadingList:(RLMReadingList *)readingList {
     [readingList.dictionaryRepresentation writeToFile:self.storePath atomically:YES];
 }
 

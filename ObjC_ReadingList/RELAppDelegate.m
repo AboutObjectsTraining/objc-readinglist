@@ -4,16 +4,16 @@
 #import "RELAppDelegate.h"
 #import "RELEditBookController.h"
 #import "RELAddBookController.h"
+#import "UIColor+RELAdditions.h"
 
 @implementation RELAppDelegate
 
 /// Returns visual attributes for the navigation bar's title
 - (NSDictionary *)navBarTitleAttributes {
-    return @{ NSForegroundColorAttributeName : [UIColor colorNamed:@"Title Color"] };
+    return @{ NSForegroundColorAttributeName : UIColor.titleColor };
 }
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application
-{
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
     [self configureGlobalAppearanceSettings];
 }
 
@@ -22,14 +22,18 @@
  tint color.
  */
 - (void)configureGlobalAppearanceSettings {
-    self.window.tintColor = [UIColor colorNamed:@"Tint Color"];
+    self.window.tintColor = UIColor.tintColor;
     
-    UINavigationBar.appearance.titleTextAttributes = self.navBarTitleAttributes;
-    UINavigationBar.appearance.largeTitleTextAttributes = self.navBarTitleAttributes;
+    UINavigationBar *navBarAppearanceProxy = UINavigationBar.appearance;
+    navBarAppearanceProxy.titleTextAttributes = self.navBarTitleAttributes;
+    navBarAppearanceProxy.largeTitleTextAttributes = self.navBarTitleAttributes;
     
-    UITableView.appearance.backgroundColor = [UIColor colorNamed:@"Alternate Cell Color"];
-    [UITableViewCell appearanceWhenContainedInInstancesOfClasses:
-     @[[RELEditBookController class], [RELAddBookController class]]].backgroundColor = [UIColor colorNamed:@"Cell Color"];
+    UITableView *tableViewAppearanceProxy = UITableView.appearance;
+    tableViewAppearanceProxy.backgroundColor = UIColor.alternateCellColor;
+    
+    UITableViewCell *cellAppearanceProxy = [UITableViewCell appearanceWhenContainedInInstancesOfClasses:
+                                            @[RELEditBookController.class, RELAddBookController.class]];
+    cellAppearanceProxy.backgroundColor = UIColor.cellColor;
 }
 
 /**
