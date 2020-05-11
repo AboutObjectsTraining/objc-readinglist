@@ -71,5 +71,6 @@
     [self save];
     
     [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    [tableView performSelector:@selector(reloadData) withObject:nil afterDelay:0.2];
 }
 @end
