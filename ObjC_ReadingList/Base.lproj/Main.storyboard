@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zlB-nK-gbe">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zlB-nK-gbe">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,7 +40,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.96539640051875009" green="0.96276974689765038" blue="0.92268736710502341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="Cell Color"/>
                                 <connections>
                                     <segue destination="2Pf-lM-6m9" kind="show" identifier="View Book" id="XEU-k6-DFi">
                                         <segue key="commit" inheritsFrom="parent" id="cpP-4q-UuX"/>
@@ -59,19 +59,17 @@
                                             <rect key="frame" x="16" y="9" width="84.666666666666671" height="24"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2012, Author Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H9b-g9-YoE">
                                             <rect key="frame" x="16.000000000000007" y="33" width="116.66666666666667" height="15.666666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.93620938876651982" green="0.93413457430130253" blue="0.89278123349062066" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="Alternate Cell Color"/>
                                 <connections>
                                     <segue destination="2Pf-lM-6m9" kind="show" identifier="View Book" id="ndd-TG-e07">
                                         <segue key="commit" inheritsFrom="parent" id="NHW-0Y-fwI"/>
@@ -140,7 +138,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="Cell Color"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="tGB-vZ-Vc4" detailTextLabel="Qlm-dp-N5a" rowHeight="56" style="IBUITableViewCellStyleValue1" id="4Bs-bk-qU2">
                                         <rect key="frame" x="0.0" y="111.33333206176758" width="375" height="56"/>
@@ -165,7 +163,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="Cell Color"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -194,7 +192,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="Cell Color"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="dMt-mL-wBU" detailTextLabel="gJW-Qj-xDn" rowHeight="56" style="IBUITableViewCellStyleValue1" id="TD3-MK-j69">
                                         <rect key="frame" x="0.0" y="279.33333206176758" width="375" height="56"/>
@@ -219,7 +217,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="Cell Color"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="168" id="9is-cu-D4L">
                                         <rect key="frame" x="0.0" y="335.33333206176758" width="375" height="168"/>
@@ -315,12 +313,15 @@
             <point key="canvasLocation" x="385" y="-606"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ndd-TG-e07"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <namedColor name="Alternate Cell Color">
+            <color red="0.93599998950958252" green="0.93400001525878906" blue="0.89300000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Cell Color">
             <color red="0.9649999737739563" green="0.96299999952316284" blue="0.92299997806549072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="XEU-k6-DFi"/>
-    </inferredMetricsTieBreakers>
 </document>
